@@ -21,6 +21,8 @@
                     <input placeholder="Search">
                     <label><img src="images/search-icon.png" alt="search icon" width="26px" height="26px" style="border: 2px solid white; position: relative; bottom: 2px;"></label>
                 </div>
+                <div id="total">$0.00</div>
+                <div class="items-purchased" id="items-purchased"></div>
             </div>
             <div class="items" id="items">
                 <table width="90%">
@@ -31,50 +33,51 @@
                     </tr>
                     <tr>
                         <td>
-                            <a href="https://www.amazon.com/ABKONCORE-Computer-Programmable-Adjustable-Comfortable/dp/B07VRB9CTD/ref=sr_1_2_sspa?dchild=1&keywords=computer+mice&qid=1605037853&sr=8-2-spons&psc=1&spLa=ZW5jcnlwdGVkUXVhbGlmaWVyPUFaUFpERVNKN09EMDcmZW5jcnlwdGVkSWQ9QTA3OTQwODUxNDQxS0FDU1VFTkVWJmVuY3J5cHRlZEFkSWQ9QTAwNjIxNDNKU1k3QkpKNDhSNE4md2lkZ2V0TmFtZT1zcF9hdGYmYWN0aW9uPWNsaWNrUmVkaXJlY3QmZG9Ob3RMb2dDbGljaz10cnVl" target="_blank"><img class="item-img" id="mouse" src="images/computer_mouse_1.jpg" width="182px" height="230px"></a>
-                            <button onclick="addToChart(13.99)">Add to chart</button>
+                            <button onclick="addToChart(13.99, 'Gaming Mouse Wired')">Add to chart</button>
                             <p><strong>$13.99</strong></p>
+                            <a href="https://www.amazon.com/ABKONCORE-Computer-Programmable-Adjustable-Comfortable/dp/B07VRB9CTD/ref=sr_1_2_sspa?dchild=1&keywords=computer+mice&qid=1605037853&sr=8-2-spons&psc=1&spLa=ZW5jcnlwdGVkUXVhbGlmaWVyPUFaUFpERVNKN09EMDcmZW5jcnlwdGVkSWQ9QTA3OTQwODUxNDQxS0FDU1VFTkVWJmVuY3J5cHRlZEFkSWQ9QTAwNjIxNDNKU1k3QkpKNDhSNE4md2lkZ2V0TmFtZT1zcF9hdGYmYWN0aW9uPWNsaWNrUmVkaXJlY3QmZG9Ob3RMb2dDbGljaz10cnVl" target="_blank"><img class="item-img" id="mouse" src="images/computer_mouse_1.jpg" width="182px" height="230px"></a>
                         </td>
                         <td>
-                            <a href="https://www.amazon.com/Logitech-Advanced-Wireless-Illuminated-Keyboard/dp/B07S92QBCJ/ref=sr_1_10?dchild=1&keywords=keyboard&qid=1605038861&sr=8-10" target="_blank"><img class="item-img" src="images/keyboard_1.jpg" width="194px" height="136px"></a>
-                            <button onclick="addToChart(13.99)">Add to chart</button>
+                            <button onclick="addToChart(99.99, 'Logitech Advanced Wireless Illuminated Keyboard')">Add to chart</button>
                             <p><strong>$99.99</strong></p>
+                            <a href="https://www.amazon.com/Logitech-Advanced-Wireless-Illuminated-Keyboard/dp/B07S92QBCJ/ref=sr_1_10?dchild=1&keywords=keyboard&qid=1605038861&sr=8-10" target="_blank"><img class="item-img" src="images/keyboard_1.jpg" width="194px" height="136px"></a>
                         </td>
                         <td>
-                            <a href="https://www.amazon.com/TeckNet-Ergonomic-Gaming-Mousepad-Support/dp/B013WW0B5G/ref=sr_1_9?dchild=1&keywords=mouse+pad&qid=1605039360&sr=8-9" target="_blank"><img class="item-img" src="images/misc_1.jpg" width="206" height="179px"></a>
-                            <button onclick="addToChart(13.99)">Add to chart</button>
+                            <button onclick="addToChart(7.99, 'TeckNet Ergonomic Gaming Mousepad')">Add to chart</button>
                             <p><strong>$7.99</strong></p>
+                            <a href="https://www.amazon.com/TeckNet-Ergonomic-Gaming-Mousepad-Support/dp/B013WW0B5G/ref=sr_1_9?dchild=1&keywords=mouse+pad&qid=1605039360&sr=8-9" target="_blank"><img class="item-img" src="images/misc_1.jpg" width="206" height="179px"></a>
                         </td>
                     </tr>
                     <tr>
                         <td>
-                            <a href="https://www.amazon.com/Redragon-M602-Ergonomic-High-Precision-Programmable/dp/B011HMDZ0Q/ref=sr_1_20?dchild=1&keywords=computer+mice&qid=1605038586&sr=8-20" target="_blank"><img class="item-img" id="mouse" src="images/computer_mouse_2.jpg" width="156px" height="261px"></a>
-                            <button onclick="addToChart(13.99)">Add to chart</button>
+                            <button onclick="addToChart(16.99, 'Redragon M602 RGB Wired Gaming Mouse')">Add to chart</button>
                             <p><strong>$16.99</strong></p>
+                            <a href="https://www.amazon.com/Redragon-M602-Ergonomic-High-Precision-Programmable/dp/B011HMDZ0Q/ref=sr_1_20?dchild=1&keywords=computer+mice&qid=1605038586&sr=8-20" target="_blank"><img class="item-img" id="mouse" src="images/computer_mouse_2.jpg" width="156px" height="261px"></a>
                         </td>
                         <td>
-                            <a href="https://www.amazon.com/PICTEK-Mechanical-Ultra-Slim-Double-Shot-Splash-Proof/dp/B089NQD4RR/ref=sr_1_19?dchild=1&keywords=keyboard&qid=1605039129&sr=8-19" target="_blank"><img class="item-img" src="images/keyboard_2.jpg" width="213px" height="82px"></a>
-                            <button onclick="addToChart(13.99)">Add to chart</button>
+                            <button onclick="addToChart(29.99, 'PICTEK Full Size Mechanical Gaming Keyboard')">Add to chart</button>
                             <p><strong>$29.99</strong></p>
+                            <a href="https://www.amazon.com/PICTEK-Mechanical-Ultra-Slim-Double-Shot-Splash-Proof/dp/B089NQD4RR/ref=sr_1_19?dchild=1&keywords=keyboard&qid=1605039129&sr=8-19" target="_blank"><img class="item-img" src="images/keyboard_2.jpg" width="213px" height="82px"></a>
                         </td>
                         <td>
-                            <a href="https://www.amazon.com/Soundcore-Cancelling-Headphones-Wireless-Bluetooth/dp/B07NM3RSRQ/ref=sr_1_8?crid=2YEMXSOP88ILV&dchild=1&keywords=headphones&qid=1605039545&sprefix=Head%2Caps%2C197&sr=8-8" target="_blank"><img class="item-img" src="images/misc_2.jpg" width="153px" height="198px"></a>
-                            <button onclick="addToChart(13.99)">Add to chart</button>
+                            <button onclick="addToChart(59.99, 'Anker Soundcore Life Q20 Hybrid Active Noise Cancelling Headphones')">Add to chart</button>
                             <p><strong>$59.99</strong></p>
+                            <a href="https://www.amazon.com/Soundcore-Cancelling-Headphones-Wireless-Bluetooth/dp/B07NM3RSRQ/ref=sr_1_8?crid=2YEMXSOP88ILV&dchild=1&keywords=headphones&qid=1605039545&sprefix=Head%2Caps%2C197&sr=8-8" target="_blank"><img class="item-img" src="images/misc_2.jpg" width="153px" height="198px"></a>
                         </td>
                     </tr>
                     <tr>
-                        <td></td>
-                        <td></td>
                         <td>
-                            <a href="https://www.amazon.com/Microphone-Condenser-Recording-Streaming-669B/dp/B06XCKGLTP/ref=sr_1_9?crid=30Q7R6NS6BKQT&dchild=1&keywords=microphone&qid=1605039821&sprefix=micro%2Caps%2C204&sr=8-9" target="_blank"><img class="item-img" src="images/misc_3.jpg" width="154px" height="169px"></a>
-                            <button onclick="addToChart(13.99)">Add to chart</button>
+                        </td>
+                        <td>
+                        </td>
+                        <td>
+                            <button onclick="addToChart(35.99, 'USB Microphone,Fifine Metal Condenser Recording Microphone')">Add to chart</button>
                             <p><strong>$35.99</strong></p>
+                            <a href="https://www.amazon.com/Microphone-Condenser-Recording-Streaming-669B/dp/B06XCKGLTP/ref=sr_1_9?crid=30Q7R6NS6BKQT&dchild=1&keywords=microphone&qid=1605039821&sprefix=micro%2Caps%2C204&sr=8-9" target="_blank"><img class="item-img" src="images/misc_3.jpg" width="154px" height="169px"></a>
                         </td>
                     </tr>
                 </table>
             </div>
-            <div id="total"></div>
             <footer>Connor Paxman --- Interactive Webpage</footer>
         </main>
         <script src="script.js" defer></script>
