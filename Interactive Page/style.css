@@ -27,6 +27,20 @@ main {
     width: 50%;
 }
 
+#total {
+    position: absolute;
+    left: 87%;
+    top: 130px;
+    font-weight: bold;
+    font-size: 2em;
+}
+
+.items-purchased {
+    position: absolute;
+    left: 75%;
+    top: 170px;
+}
+
 .items {
     animation: open 1s;
 }
@@ -34,6 +48,10 @@ main {
 table {
     text-align: center;
     width: 75%;
+}
+
+button {
+    float: top;
 }
 
 .item-img {
@@ -51,10 +69,6 @@ table {
     position: relative;
     top: 23px;
     left: 15px;
-}
-
-button {
-    margin: 60px;
 }
 
 footer {
